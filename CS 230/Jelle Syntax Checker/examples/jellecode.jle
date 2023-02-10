@@ -1,0 +1,10 @@
+display "This is aquadratic equation solver", nl;
+display "A quadratic equation is in the form of ax^2 + bx + c = 0";
+display "Enter a,b,c";
+input a,b,c;
+
+discrim := b^2 - 4*a*c;
+root1:= (-b-(discrim^(1/2)))/2*a;
+root2:= (-b+ (discrim^(1/2)))/2*a;
+
+display "the two roots are:",nl, "root1-->", root1,nl,"root 2-->",root2; 

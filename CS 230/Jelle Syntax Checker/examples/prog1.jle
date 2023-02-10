@@ -1,0 +1,4 @@
+# prog1.jle
+# illegal display statement
+
+display "hello", 5;

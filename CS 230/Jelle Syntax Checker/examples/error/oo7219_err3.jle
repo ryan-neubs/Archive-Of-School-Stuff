@@ -1,0 +1,11 @@
+#oo7219_err3.jle
+#feyi omotehinwa
+#pythagoras.jelle
+
+display "Enter opposite,adjacent: ", nl;
+input opposite, adjacent;
+
+# bad assignment operator
+hypothenus = (opposite^2 + adjacent^2)^0.5;
+
+display "hyopthenus is ", hypothenus;

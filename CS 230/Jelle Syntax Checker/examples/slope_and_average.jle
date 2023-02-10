@@ -1,0 +1,19 @@
+# This is a program to find the slope of a line
+# By: Jacob, Tryton, and Sammy
+
+display "Enter the y, x, and b: ";
+input y, x, b;
+
+m := (y - b) / x;
+
+display "The slope is: ", m;
+
+# This is a program that finds the average two numbers
+# By: Jacob, Tryton, and Sammy
+
+display "Enter your two numbers: ";
+input a, b;
+
+avg := (a + b) / 2;
+
+display "The average is: ", avg;

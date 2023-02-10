@@ -1,0 +1,10 @@
+# prog2.jle
+# Quadratic solver with multiple input
+
+display "Enter values of a, b and c: ";
+input a, b, c;
+
+discroot := sqrt(b^2-4*a*c);
+
+display "root1 is",  (-b+discroot)/(2*a), nl;
+display  "root2 is",  (-b-discroot)/(2*a), nl;

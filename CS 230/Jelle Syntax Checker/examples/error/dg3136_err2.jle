@@ -1,0 +1,8 @@
+# distance.jle
+# This program is missing an opening parenthesis after the assignment in line 8. 
+
+display "Calculates the distance between 2 points (enter x1, y1, x2, y2)", nl;
+input x1, y1, x2, y2;
+
+dist := (x2 - x1)^2 + (y2 - y1)^2)^(1/2);
+display "The distance between your 2 points are:", dist;

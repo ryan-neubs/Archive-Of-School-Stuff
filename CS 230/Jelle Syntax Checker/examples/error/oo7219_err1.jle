@@ -1,0 +1,11 @@
+#oo7219_err1.jle
+#feyi omotehinwa
+#pythagoras.jelle
+
+display "Enter opposite,adjacent: ", nl;
+input opposite, adjacent;
+
+# missing ; on next line
+hypothenus := (opposite^2 + adjacent^2)^0.5
+
+display "hyopthenus is ", hypothenus;

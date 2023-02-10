@@ -1,0 +1,11 @@
+# rn4544_correct.jle
+# A program that finds the value of a hypothenuse
+# by Ryan Neubauer
+
+display "This program calculates the value of a hypothenuse given two sides of a triangle", nl;
+display "Enter b, c:", nl;
+input b, c;
+a := (b^2 + c^2)^0.5;
+display "The value of a is", a, nl;
+
+# corrected error colon missing in assignment statement

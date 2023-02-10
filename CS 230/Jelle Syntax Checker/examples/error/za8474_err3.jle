@@ -1,0 +1,14 @@
+#CostOfaRug.jle
+# This Program calculates the cost of a rug
+
+display "Let's calculate the cost of a rug", nl;
+
+display "Enter the length and width in feet;            #Error 3 removed end quote of display string
+input l, w;
+
+display "What is the cost of material per square foot?", nl;
+input c;
+
+cost = l*w*c;
+    
+display "The cost of the rug is $", cost;

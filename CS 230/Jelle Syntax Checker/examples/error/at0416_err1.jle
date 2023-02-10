@@ -1,0 +1,12 @@
+display "This is aquadratic equation solver", nl;
+display "A quadratic equation is in the form of ax^2 + bx + c = 0";
+display "Enter a,b,c";
+input a,b,c;
+
+discrimm := b^2 - 4*a*c;
+#"discrimm" variable is not the same name as "discrim" this person kinda retarded
+# checker is just a syntax checker it has nothing to do with memory and if a ID exists or not in the current scope
+root1 := (-b-(discrim^(1/2)))/2*a;
+root2 := (-b+ (discrim^(1/2)))/2*a  # introduced real error here
+
+display "the two roots are:",nl, "root1-->", root1,nl,"root 2-->",root2; 

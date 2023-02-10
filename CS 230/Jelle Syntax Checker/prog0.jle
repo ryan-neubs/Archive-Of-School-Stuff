@@ -1,0 +1,7 @@
+# prog0.jle
+# by cs230
+
+display "Hello, World", nl; # say hello
+display "Done", nl;
+
+# All done

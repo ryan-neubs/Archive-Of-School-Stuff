@@ -1,0 +1,9 @@
+# pythagorean.jle
+# A program that finds the value of a hypothenuse
+# by Towera Longwe, Feyi Omotehinwa, Alexandra Wonyu
+
+display "This program calculates the value of a hypothenuse given two sides of a triangle", nl;
+display "Enter b, c:", nl;
+input b, c;
+a := (b^2 + c^2)^0.5;  # checker caught error missing : for assignment
+display "The value of a is", a, nl;

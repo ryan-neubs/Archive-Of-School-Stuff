@@ -1,0 +1,7 @@
+#this program converts temperature from celsius to fahrenheit
+
+display "This converts celsius to fahrenheit", nl; # did "str"; nl checker caught
+display "Enter the temp in degrees celsius: ";
+input celsius;
+fahr := 9/5 * celsius +32;
+display "The temp is ", fahr, "degrees f.", nl;

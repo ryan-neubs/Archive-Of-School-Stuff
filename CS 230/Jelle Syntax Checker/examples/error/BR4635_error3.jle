@@ -1,0 +1,12 @@
+display "Calcuates the distance between 2 points";
+display nl, "enter x1: ";
+input x1;
+display nl, "enter x2: ";
+input x2;
+display nl, "enter y1: ";
+input y1;
+display nl, "enter y2: ";
+input y2;
+
+dist := (x2 - x1)^2 + (y2 - y1)^2)^(1/2); # missing '(' at start of dist
+display nl, "The distance between your 2 points is:", dist;

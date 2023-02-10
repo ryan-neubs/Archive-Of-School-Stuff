@@ -1,0 +1,19 @@
+#By: Isaac Nguyen
+#CS 230 Dr. Zelle
+#Error 1 jle program
+#October 15, 2021
+
+
+
+    display "This is a quadratic equation solver", nl;
+    display "A quadratic equation is in the form of ax^2 + bx + c = 0", nl;
+    display "Enter a,b,c: " #missing semicolon
+    input a,b,c;
+
+    discrim := b^2 - 4*a*c;
+    root1 := (-b - (discrim^(1/2)))/2*a;
+    root2 := (-b + (discrim^(1/2)))/2*a;
+
+    display "The two roots are: ",nl, "root1-->", root1, nl,"root 2-->",root2, nl; 
+
+

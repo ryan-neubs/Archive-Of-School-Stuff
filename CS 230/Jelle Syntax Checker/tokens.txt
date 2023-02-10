@@ -1,0 +1,11 @@
+# tokens.txt
+# A wide variety of tokens.
+
+^();,:=display;input nl+-
+*/% hello 3
+3.
+3.0 #and a comment in the middle
+.5
+3.5.5
+"hello"
+

@@ -1,0 +1,17 @@
+# aw6964_correct.jle
+# Originally by: Darren Kilpatrick
+# Modifications by: Alexandra Wonyu
+
+# This Program calculates the cost of a rug
+
+display "Let's calculate the cost of a rug", nl;
+
+display "Enter the length and width in feet";
+input l, w;
+
+display "What is the cost per square foot?";
+input c;
+
+cost := l*w*c;
+    
+display, "The cost of the rug is $", cost, nl; # comma after display

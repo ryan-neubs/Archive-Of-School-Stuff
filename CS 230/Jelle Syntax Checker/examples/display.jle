@@ -1,0 +1,11 @@
+# display.jle
+# tests display statement
+
+
+display "hello world!";
+
+display x;
+
+display x + 5;
+
+display "x is: ", x;

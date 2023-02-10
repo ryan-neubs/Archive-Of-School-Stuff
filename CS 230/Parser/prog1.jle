@@ -1,0 +1,18 @@
+# prog1.jle
+# quadratic solver with separate inputs
+
+# input section
+display "Enter the value of a:";
+input a;
+display "Enter the value of b:";
+input b;
+display "Enter the value of c:";
+input c;
+
+# processing section
+discrim := b^2 - 4*a*c;
+discroot := discrim^(.5);
+
+#output section
+display "root1 is",  (-b + discroot) / (2*a);
+display "root2 is" , (-b - discroot) / (2*a);

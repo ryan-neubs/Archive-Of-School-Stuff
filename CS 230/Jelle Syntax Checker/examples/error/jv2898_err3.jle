@@ -1,0 +1,11 @@
+# This is a program to find the slope of a line
+# By: Jacob, Tryton, and Sammy
+
+display "This program finds the slope of a line.";
+display "Enter the y, x, and b: ";
+input y, x, b;
+
+m = (y - b) / x;
+# It should be := for assignment instead of =. 
+
+display "The slope is: ", m;

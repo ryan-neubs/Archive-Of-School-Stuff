@@ -1,0 +1,25 @@
+# assignment tests
+
+#name := 4;               # works
+
+#var := 5 + (6 + 7);      # works
+
+#test := 1 + 2 * 3;       # works
+
+#multi := 1 + 2 + 3;      # works
+
+#multi2 := 1 * 2 + 3 * 4; # works
+
+#order := 1 + 2 + 3 * 4;  # works
+
+#val := 1 + x;            # works
+
+#div := 5 / 2;            # works
+
+#divMul := 10 * 9 / 8;    # works
+
+funct := add(5);          # works
+
+paren := (15);            # works
+
+numParenTest := 10 + (5); # works

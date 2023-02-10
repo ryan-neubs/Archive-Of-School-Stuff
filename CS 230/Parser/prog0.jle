@@ -1,0 +1,7 @@
+# prog0.jle
+# Hello World
+
+display "Hello, World!"; # display hello world
+
+# all done
+
