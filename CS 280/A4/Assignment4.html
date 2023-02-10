@@ -1,0 +1,26 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Assignment4.html
+	 By: Ryan Neubauer, Gavin Roy
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+	<script type="text/javascript" src="ArraySort.js">
+	</script>
+	<script> 
+		function sortTest() {
+			var Array1 = [44,"grapes",true,-24,'aren"t',19,299,'wet',1,false,true,-17,"prunes",4];
+			Array2 = [2.72,"hi!",-3,true,37,"is",21,"who?",-9.99,false,6,"what",4,"I'm",31,"huh?"];
+			sort1 = arraySort(Array1);
+			sort2 = arraySort(Array2);
+			document.write('Array string 1 = ', sort1[1]);
+			document.write('</br>');
+			document.write('Array string 2 = ', sort2[1]);
+		}
+	</script>
+	<button type='button' onclick='sortTest();'>Click To Test Array Function</button>
+</body>
+</html>

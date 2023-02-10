@@ -1,0 +1,15 @@
+Tests to be run:
+- Test that an index of 8 is out of range of the board
+- Test that the board sets row 0 and 1 to black
+- Test that the board sets row 6 and 7 to white
+- Test that white moves first
+- Test that black moves after white
+- Test for a win for white in all of row 0
+- Test for a win for black in all of row 7
+- Test that a fresh board returns no winner
+- Test that all spots outside of row 0 return no winner for white
+- Test that all spots outside of row 7 return no winner for black
+- Test that you cannot move a piece into the same color
+- Test that you cannot move a piece farther than 1 space
+- Test that you cannot move backwards
+- Test that a piece successfully moves

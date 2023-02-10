@@ -1,0 +1,513 @@
+%!PS-Adobe-2.0
+%%DocumentFonts: Courier Times-Bold
+%%Title: render_oo.py (mpage)
+%%Creator: mpage 2.5.6 Januari 2008
+%%CreationDate: Thu May 12 07:15:15 2022
+%%Orientation: Landscape
+%%DocumentMedia: letter 612 792
+%%BoundingBox: 18 18 594 774
+%%Pages: (atend)
+%%EndComments
+
+%%BeginProlog
+
+/mp_stm usertime def
+/mp_pgc statusdict begin pagecount end def
+statusdict begin /jobname (render_oo.py) def end
+/reencsmalldict 12 dict def /ReEncodeSmall { reencsmalldict begin
+/newcodesandnames exch def /newfontname exch def /basefontname exch def
+/basefontdict basefontname findfont def /newfont basefontdict maxlength dict def
+basefontdict { exch dup /FID ne { dup /Encoding eq { exch dup length array copy newfont 3 1 roll put } { exch newfont 3 1 roll put }
+ifelse }
+  { pop pop }
+  ifelse } forall
+newfont /FontName newfontname put
+newcodesandnames aload pop newcodesandnames length 2 idiv
+{ newfont /Encoding get 3 1 roll put } repeat
+newfontname newfont definefont pop end } def
+/charvec [
+026 /Scaron
+027 /Ydieresis
+028 /Zcaron
+029 /scaron
+030 /trademark
+031 /zcaron
+032 /space
+033 /exclam
+034 /quotedbl
+035 /numbersign
+036 /dollar
+037 /percent
+038 /ampersand
+039 /quoteright
+040 /parenleft
+041 /parenright
+042 /asterisk
+043 /plus
+044 /comma
+045 /minus
+046 /period
+047 /slash
+048 /zero
+049 /one
+050 /two
+051 /three
+052 /four
+053 /five
+054 /six
+055 /seven
+056 /eight
+057 /nine
+058 /colon
+059 /semicolon
+060 /less
+061 /equal
+062 /greater
+063 /question
+064 /at
+065 /A
+066 /B
+067 /C
+068 /D
+069 /E
+070 /F
+071 /G
+072 /H
+073 /I
+074 /J
+075 /K
+076 /L
+077 /M
+078 /N
+079 /O
+080 /P
+081 /Q
+082 /R
+083 /S
+084 /T
+085 /U
+086 /V
+087 /W
+088 /X
+089 /Y
+090 /Z
+091 /bracketleft
+092 /backslash
+093 /bracketright
+094 /asciicircum
+095 /underscore
+096 /quoteleft
+097 /a
+098 /b
+099 /c
+100 /d
+101 /e
+102 /f
+103 /g
+104 /h
+105 /i
+106 /j
+107 /k
+108 /l
+109 /m
+110 /n
+111 /o
+112 /p
+113 /q
+114 /r
+115 /s
+116 /t
+117 /u
+118 /v
+119 /w
+120 /x
+121 /y
+122 /z
+123 /braceleft
+124 /bar
+125 /braceright
+126 /asciitilde
+127 /.notdef
+128 /fraction
+129 /florin
+130 /quotesingle
+131 /quotedblleft
+132 /guilsinglleft
+133 /guilsinglright
+134 /fi
+135 /fl
+136 /endash
+137 /dagger
+138 /daggerdbl
+139 /bullet
+140 /quotesinglbase
+141 /quotedblbase
+142 /quotedblright
+143 /ellipsis
+144 /dotlessi
+145 /grave
+146 /acute
+147 /circumflex
+148 /tilde
+149 /oe
+150 /breve
+151 /dotaccent
+152 /perthousand
+153 /emdash
+154 /ring
+155 /Lslash
+156 /OE
+157 /hungarumlaut
+158 /ogonek
+159 /caron
+160 /lslash
+161 /exclamdown
+162 /cent
+163 /sterling
+164 /currency
+165 /yen
+166 /brokenbar
+167 /section
+168 /dieresis
+169 /copyright
+170 /ordfeminine
+171 /guillemotleft
+172 /logicalnot
+173 /hyphen
+174 /registered
+175 /macron
+176 /degree
+177 /plusminus
+178 /twosuperior
+179 /threesuperior
+180 /acute
+181 /mu
+182 /paragraph
+183 /periodcentered
+184 /cedilla
+185 /onesuperior
+186 /ordmasculine
+187 /guillemotright
+188 /onequarter
+189 /onehalf
+190 /threequarters
+191 /questiondown
+192 /Agrave
+193 /Aacute
+194 /Acircumflex
+195 /Atilde
+196 /Adieresis
+197 /Aring
+198 /AE
+199 /Ccedilla
+200 /Egrave
+201 /Eacute
+202 /Ecircumflex
+203 /Edieresis
+204 /Igrave
+205 /Iacute
+206 /Icircumflex
+207 /Idieresis
+208 /Eth
+209 /Ntilde
+210 /Ograve
+211 /Oacute
+212 /Ocircumflex
+213 /Otilde
+214 /Odieresis
+215 /multiply
+216 /Oslash
+217 /Ugrave
+218 /Uacute
+219 /Ucircumflex
+220 /Udieresis
+221 /Yacute
+222 /Thorn
+223 /germandbls
+224 /agrave
+225 /aacute
+226 /acircumflex
+227 /atilde
+228 /adieresis
+229 /aring
+230 /ae
+231 /ccedilla
+232 /egrave
+233 /eacute
+234 /ecircumflex
+235 /edieresis
+236 /igrave
+237 /iacute
+238 /icircumflex
+239 /idieresis
+240 /eth
+241 /ntilde
+242 /ograve
+243 /oacute
+244 /ocircumflex
+245 /otilde
+246 /odieresis
+247 /divide
+248 /oslash
+249 /ugrave
+250 /uacute
+251 /ucircumflex
+252 /udieresis
+253 /yacute
+254 /thorn
+255 /ydieresis
+] def
+/Courier /OurCharSet charvec ReEncodeSmall
+/textfont /OurCharSet findfont 11 scalefont def
+/textfontbold /OurCharSet-Bold findfont 11 scalefont def
+/fnamefont /Times-Bold findfont 14 scalefont def
+/headerfont /Times-Bold findfont 12 scalefont def
+textfont setfont
+(a) stringwidth pop /mp_a_x exch def
+%%EndProlog
+%%BeginSetup
+%%BeginFeature: *Duplex DuplexTumble
+<< /Duplex true /Tumble true >> setpagedevice
+%%EndFeature
+%%EndSetup
+%%Page: 1 1
+save
+0 setlinewidth
+18 18 moveto 0 756 rlineto
+576 0 rlineto 0 -756 rlineto closepath stroke
+18 396 moveto 576 0 rlineto stroke
+gsave
+18 774 translate
+-90 rotate
+0 0 moveto 0 576 rlineto 378 0 rlineto 0 -576 rlineto closepath clip
+378 80 mp_a_x mul div 576 808 div scale
+newpath 0 792 moveto 80 mp_a_x mul 0 rlineto stroke
+headerfont setfont
+3 796 moveto (Wed 11 May 2022 08:11:29 PM CDT) show
+80 mp_a_x mul dup (Page 1) stringwidth pop sub 3 sub 796 moveto (Page 1) show
+fnamefont setfont
+(render_oo.py) stringwidth pop sub 2 div 796 moveto
+(render_oo.py) show
+4 7 translate 370 378 div 784 792 div scale
+textfont setfont
+0 780 moveto (# render_oo.py) show
+0 756 moveto ("""FrameBuffer that keeps the z coordinates of points to implement a) show
+0 744 moveto (depth buffer for hidden surface removal.) show
+0 720 moveto (""") show
+0 684 moveto (from math import inf) show
+0 660 moveto (from collections import namedtuple, defaultdict) show
+0 648 moveto (import ren3d.matrix as mat) show
+0 612 moveto (def render_signature\(scene, img\):) show
+4 mp_a_x mul 600 moveto ("""Render signature view of scene) show
+4 mp_a_x mul 576 moveto (All polygons are drawn with their assigned raw color) show
+4 mp_a_x mul 552 moveto (""") show
+4 mp_a_x mul 540 moveto (camera = scene.camera) show
+4 mp_a_x mul 528 moveto (img.clear\(scene.background.quantize\(255\)\)) show
+4 mp_a_x mul 516 moveto (d = -camera.distance) show
+4 mp_a_x mul 504 moveto (fb = FrameBuffer\(img, camera.window\)) show
+4 mp_a_x mul 492 moveto (for poly in scene.objects.iter_polygons\(\):) show
+8 mp_a_x mul 480 moveto (# draw triangle fan of the projected polygon) show
+8 mp_a_x mul 468 moveto (points = [\(d*p.x/p.z, d*p.y/p.z, p.z\) for p in poly.points]) show
+8 mp_a_x mul 456 moveto (colors = [poly.color]*3  # use raw polygon color for all 3 vertices) show
+8 mp_a_x mul 444 moveto (for i in range\(1, len\(poly.points\)-1\):) show
+12 mp_a_x mul 432 moveto (fb.draw_filled_triangle\([points[0], points[i], points[i+1]], colors\)) show
+0 408 moveto (def render_wireframe\(scene, img\):) show
+4 mp_a_x mul 396 moveto ("""Render wireframe view of scene into img) show
+4 mp_a_x mul 384 moveto (""") show
+4 mp_a_x mul 372 moveto (# put your render_wireframe here and tweak it to use the new FB) show
+0 336 moveto (def render_gouraud\(scene, img\):) show
+4 mp_a_x mul 324 moveto ("""Render scene with Gouraud shaded polygons""") show
+0 288 moveto (def lambert_colors\(scene, poly\):) show
+4 mp_a_x mul 276 moveto ("""return lambert shaded colors corresponding to veritices of polygon) show
+4 mp_a_x mul 252 moveto (helper method for render_gouraud. The poly record will need to have:) show
+7 mp_a_x mul 240 moveto (points: list of  vertices of the polygon) show
+7 mp_a_x mul 228 moveto (normals: list of normal vectors \(one for each point\)) show
+7 mp_a_x mul 216 moveto (color: an RGB color of the polygon) show
+4 mp_a_x mul 192 moveto (""") show
+0 156 moveto (# ---------------------------------------------------------------------------) show
+0 144 moveto (# Helper class) show
+0 132 moveto (pixloc = namedtuple\("pixloc", "x y z"\)) show
+0 96 moveto (class FrameBuffer:) show
+4 mp_a_x mul 84 moveto (""" Wrapper for images to provide a window mapping and drawing primitives.) show
+4 mp_a_x mul 72 moveto (This is a stripped down combination of elements from our Painter) show
+4 mp_a_x mul 60 moveto (and Render2d projects) show
+4 mp_a_x mul 36 moveto (This version is updated to keep the z component of the points to use for ) show
+4 mp_a_x mul 24 moveto (depth buffering.) show
+4 mp_a_x mul 12 moveto (""") show
+grestore
+gsave
+18 396 translate
+-90 rotate
+0 0 moveto 0 576 rlineto 378 0 rlineto 0 -576 rlineto closepath clip
+378 80 mp_a_x mul div 576 808 div scale
+newpath 0 792 moveto 80 mp_a_x mul 0 rlineto stroke
+headerfont setfont
+3 796 moveto (Wed 11 May 2022 08:11:29 PM CDT) show
+80 mp_a_x mul dup (Page 2) stringwidth pop sub 3 sub 796 moveto (Page 2) show
+fnamefont setfont
+(render_oo.py) stringwidth pop sub 2 div 796 moveto
+(render_oo.py) show
+4 7 translate 370 378 div 784 792 div scale
+textfont setfont
+4 mp_a_x mul 780 moveto (def __init__\(self, img, window\):) show
+8 mp_a_x mul 768 moveto (self.img = img) show
+8 mp_a_x mul 756 moveto (self.size = img.size) show
+8 mp_a_x mul 744 moveto (# viewport dimensions are 1 unit larger than pixel dimensions) show
+8 mp_a_x mul 732 moveto (w, h = self.size[0] + 1, self.size[1] + 1) show
+8 mp_a_x mul 720 moveto (l, b, r, t = window) show
+8 mp_a_x mul 708 moveto (self.transform = [[w/\(r-l\), 0.0, 0.0, \(-.5*r-\(w-.5\)*l\)/\(r-l\)],) show
+26 mp_a_x mul 696 moveto ([0.0, h/\(t-b\), 0.0, \(-.5*t-\(h-.5\)*b\)/\(t-b\)],) show
+26 mp_a_x mul 684 moveto ([0.0, 0.0, 1.0, 0.0],) show
+26 mp_a_x mul 672 moveto ([0.0, 0.0, 0.0, 1.0]]) show
+4 mp_a_x mul 648 moveto (def transpt\(self, point\):) show
+8 mp_a_x mul 636 moveto (# Transform point from window \(world\) coordinates to pixel coordinates) show
+8 mp_a_x mul 624 moveto (# x and y are ints, z is a float indicating depth) show
+8 mp_a_x mul 612 moveto (x, y, z, _ = mat.apply\(self.transform, point+\(1,\)\)) show
+8 mp_a_x mul 600 moveto (return pixloc\(int\(x + .5\), int\(y + .5\), z\)) show
+4 mp_a_x mul 576 moveto (def set_pixel\(self, loc, z, color\):) show
+8 mp_a_x mul 564 moveto (w, h = self.size) show
+8 mp_a_x mul 552 moveto (if 0 <= loc[0] < w and 0 <= loc[1] < h:) show
+12 mp_a_x mul 540 moveto (self.img[loc] = color.quantize\(255\)) show
+4 mp_a_x mul 516 moveto (def draw_line\(self, a, b, rgb\):) show
+8 mp_a_x mul 504 moveto (# pre: a and b are pixel locations \(int, int, float\)) show
+8 mp_a_x mul 492 moveto (if a[:2] == b[:2]:   # handle degenerate case same pixel location) show
+12 mp_a_x mul 480 moveto (self.set_pixel\(a[:2], a.z, rgb\)) show
+12 mp_a_x mul 468 moveto (return) show
+8 mp_a_x mul 456 moveto (# Otherwise, handle the general case) show
+8 mp_a_x mul 444 moveto (dx = b.x - a.x) show
+8 mp_a_x mul 432 moveto (dy = b.y - a.y) show
+8 mp_a_x mul 420 moveto (dz = b.z - a.z ) show
+8 mp_a_x mul 408 moveto (if abs\(dx\) > abs\(dy\):  # x changes faster, walk it) show
+12 mp_a_x mul 396 moveto (if a.x > b.x:) show
+16 mp_a_x mul 384 moveto (a, b = b, a) show
+12 mp_a_x mul 372 moveto (yinc = dy/dx) show
+12 mp_a_x mul 360 moveto (y = a.y) show
+12 mp_a_x mul 348 moveto (zinc = dz/dx) show
+12 mp_a_x mul 336 moveto (z = a.z) show
+12 mp_a_x mul 324 moveto (for x in range\(a.x, b.x + 1\):) show
+16 mp_a_x mul 312 moveto (self.set_pixel\(\(x, round\(y\)\), z, rgb\)) show
+16 mp_a_x mul 300 moveto (y += yinc) show
+16 mp_a_x mul 288 moveto (z += zinc) show
+8 mp_a_x mul 276 moveto (else:) show
+12 mp_a_x mul 264 moveto (if a.y > b.y:) show
+16 mp_a_x mul 252 moveto (a, b = b, a) show
+12 mp_a_x mul 240 moveto (xinc = dx/dy) show
+12 mp_a_x mul 228 moveto (x = a.x) show
+12 mp_a_x mul 216 moveto (zinc = dz/dy) show
+12 mp_a_x mul 204 moveto (z = a.z) show
+12 mp_a_x mul 192 moveto (for y in range\(a.y, b.y + 1\):) show
+16 mp_a_x mul 180 moveto (self.set_pixel\(\(round\(x\), y\), z, rgb\)) show
+16 mp_a_x mul 168 moveto (x += xinc) show
+16 mp_a_x mul 156 moveto (z += zinc) show
+4 mp_a_x mul 132 moveto (def draw_polygon\(self, points, color\):) show
+8 mp_a_x mul 120 moveto (# points are 3D window points \(tuple of floats\)) show
+8 mp_a_x mul 108 moveto (pixels = [self.transpt\(p\) for p in points]) show
+8 mp_a_x mul 96 moveto (for i in range\(len\(pixels\) - 1\):) show
+12 mp_a_x mul 84 moveto (self.draw_line\(pixels[i], pixels[i+1], color\)) show
+8 mp_a_x mul 72 moveto (self.draw_line\(pixels[-1], pixels[0], color\)) show
+4 mp_a_x mul 48 moveto (def draw_filled_triangle\(self, pts, rgbs\):) show
+8 mp_a_x mul 36 moveto ("""Draw a filled triangle, smoothly interpolating vertex ) show
+8 mp_a_x mul 12 moveto (pts is a list 3D window points \(tuple of floats\)) show
+8 mp_a_x mul 0 moveto (rgbs is a list of corresponding rbgs) show
+grestore
+restore
+showpage
+%%Page: 2 2
+save
+0 setlinewidth
+18 18 moveto 0 756 rlineto
+576 0 rlineto 0 -756 rlineto closepath stroke
+18 396 moveto 576 0 rlineto stroke
+gsave
+18 774 translate
+-90 rotate
+0 0 moveto 0 576 rlineto 378 0 rlineto 0 -576 rlineto closepath clip
+378 80 mp_a_x mul div 576 808 div scale
+newpath 0 792 moveto 80 mp_a_x mul 0 rlineto stroke
+headerfont setfont
+3 796 moveto (Wed 11 May 2022 08:11:29 PM CDT) show
+80 mp_a_x mul dup (Page 3) stringwidth pop sub 3 sub 796 moveto (Page 3) show
+fnamefont setfont
+(render_oo.py) stringwidth pop sub 2 div 796 moveto
+(render_oo.py) show
+4 7 translate 370 378 div 784 792 div scale
+textfont setfont
+8 mp_a_x mul 780 moveto (""") show
+8 mp_a_x mul 768 moveto (# make pixlocs a, b, c) show
+8 mp_a_x mul 756 moveto (a, b, c = tuple\(self.transpt\(p\) for p in pts\)) show
+8 mp_a_x mul 744 moveto (# make sure rgbs is a list of colors, one for each vertex) show
+8 mp_a_x mul 732 moveto (if type\(rgbs\) != list:) show
+12 mp_a_x mul 720 moveto (rgbs = [rgbs, rgbs, rgbs]) show
+8 mp_a_x mul 696 moveto (def linefunc\(p0, p1\):) show
+12 mp_a_x mul 684 moveto (x0, y0, _ = p0) show
+12 mp_a_x mul 672 moveto (x1, y1, _ = p1) show
+12 mp_a_x mul 648 moveto (def f\(x, y\):) show
+16 mp_a_x mul 636 moveto (return \(y0-y1\)*x + \(x1-x0\)*y + x0*y1-x1*y0) show
+12 mp_a_x mul 612 moveto (return f) show
+8 mp_a_x mul 600 moveto (try:) show
+12 mp_a_x mul 588 moveto (fbc = linefunc\(b, c\)) show
+12 mp_a_x mul 576 moveto (alphamul = 1 / fbc\(a.x, a.y\)) show
+12 mp_a_x mul 564 moveto (fac = linefunc\(a, c\)) show
+12 mp_a_x mul 552 moveto (betamul = 1 / fac\(b.x, b.y\)) show
+12 mp_a_x mul 540 moveto (fab = linefunc\(a, b\)) show
+12 mp_a_x mul 528 moveto (gammamul = 1 / fab\(c.x, c.y\)) show
+8 mp_a_x mul 516 moveto (except ZeroDivisionError:) show
+12 mp_a_x mul 504 moveto (# protection against degenerate triangles) show
+12 mp_a_x mul 492 moveto (return) show
+8 mp_a_x mul 468 moveto (for x in range\(min\(a.x, b.x, c.x\), max\(a.x, b.x, c.x\)+1\):) show
+12 mp_a_x mul 456 moveto (for y in range\(min\(a.y, b.y, c.y\), max\(a.y, b.y, c.y\)+1\):) show
+16 mp_a_x mul 444 moveto (alpha = fbc\(x, y\) * alphamul) show
+16 mp_a_x mul 432 moveto (if alpha < 0:) show
+20 mp_a_x mul 420 moveto (continue) show
+16 mp_a_x mul 408 moveto (beta = fac\(x, y\) * betamul) show
+16 mp_a_x mul 396 moveto (if beta < 0:) show
+20 mp_a_x mul 384 moveto (continue) show
+16 mp_a_x mul 372 moveto (gamma = fab\(x, y\) * gammamul) show
+16 mp_a_x mul 360 moveto (if gamma < 0:) show
+20 mp_a_x mul 348 moveto (continue) show
+16 mp_a_x mul 324 moveto (# point is inside draw it with interpolated z and color) show
+16 mp_a_x mul 312 moveto (z = alpha*a.z + beta*b.z + gamma*c.z) show
+16 mp_a_x mul 300 moveto (rgb = alpha*rgbs[0] + beta*rgbs[1] + gamma*rgbs[2]) show
+16 mp_a_x mul 288 moveto (self.set_pixel\(\(x, y\), z, rgb\)) show
+grestore
+gsave
+18 396 translate
+-90 rotate
+0 0 moveto 0 576 rlineto 378 0 rlineto 0 -576 rlineto closepath clip
+378 80 mp_a_x mul div 576 808 div scale
+newpath 0 792 moveto 80 mp_a_x mul 0 rlineto stroke
+headerfont setfont
+3 796 moveto (Wed 11 May 2022 07:07:41 PM CDT) show
+80 mp_a_x mul dup (Page 1) stringwidth pop sub 3 sub 796 moveto (Page 1) show
+fnamefont setfont
+(run_oosig.py) stringwidth pop sub 2 div 796 moveto
+(run_oosig.py) show
+4 7 translate 370 378 div 784 792 div scale
+textfont setfont
+0 780 moveto (# run_wf.py) show
+0 768 moveto (#   Create wireframe image of scene.) show
+0 756 moveto (# usage: pypy run_wf.py scene0 320 240) show
+0 732 moveto (import sys) show
+0 720 moveto (import time) show
+0 696 moveto (from ren3d.scenedef import load_scene) show
+0 684 moveto (from ren3d.image import Image) show
+0 672 moveto (from ren3d.render_oo import render_signature) show
+0 636 moveto (def main\(\):) show
+4 mp_a_x mul 624 moveto (if len\(sys.argv\) != 4:) show
+8 mp_a_x mul 612 moveto (print\("Usage: python run_sig.py scene0 320 240"\)) show
+4 mp_a_x mul 600 moveto (scene, scenename = load_scene\(sys.argv[1]\)) show
+4 mp_a_x mul 588 moveto (size = int\(sys.argv[2]\), int\(sys.argv[3]\)) show
+4 mp_a_x mul 576 moveto (img = Image\(size\)) show
+4 mp_a_x mul 564 moveto (t1 = time.time\(\)) show
+4 mp_a_x mul 552 moveto (render_signature\(scene, img\)) show
+4 mp_a_x mul 540 moveto (t2 = time.time\(\)) show
+4 mp_a_x mul 528 moveto (img.show\(\)) show
+4 mp_a_x mul 516 moveto (img.save\("images/{}-sig-{:d}-{:d}.ppm".format\(scenename, *size\)\)) show
+4 mp_a_x mul 504 moveto (print\(t2-t1, "seconds"\)) show
+0 468 moveto (if __name__ == "__main__":) show
+4 mp_a_x mul 456 moveto (main\(\)) show
+grestore
+restore
+showpage
+%%Trailer
+%%Pages: 3

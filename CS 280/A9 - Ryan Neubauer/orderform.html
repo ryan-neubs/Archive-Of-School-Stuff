@@ -1,0 +1,97 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- orderform.html
+	 By: Ryan Neubauer
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>The Orange Store</title>
+		<link rel='shortcut icon' type='image/vnd.microsoft.icon' href='C:\Users\kmneu\OneDrive\Desktop\CS 280\A2\favicon.ico' />
+		<link rel='stylesheet' type='text/css' href="styles\home.css"/>
+	</head>
+	<body>
+		<h1 style="text-decoration: underline;">Please enter your details for payment below:</h1>
+		<form id="orderform" name="orderform" action="localhost/formvalidator.php" method="post" onsubmit="checkPurchaseAmt();">
+		
+			<!-- Name and Address -->
+			<label for="fname">Full Name:<br>FirstName, Middle_Initial, LastName</label><br/>
+			<input type="text" id="fname" name="fname" onchange="checkName();"/><br/>
+			<label for="caddress">Address:<br>[House Number] Street</label><br/>
+			<input type="text" id="address" name="address" onchange="checkAddress();"/><br/>
+			
+			<!-- Payment Info -->
+			<label for="paymenttype">Payment Type:</label><br/>
+			<input type="radio" id="visa" name="visa" value="visa"/>
+			<label for="visa">Visa</label><br/>
+			<input type="radio" id="master" name="master" value="master"/>
+			<label for="master">Master</label><br/>
+			<input type="radio" id="discover" name="discover" value="discover"/>
+			<label for="discover">Discover</label><br/>
+			<br/>
+			
+			<!-- Card Details -->
+			<label for="cnum">Card Number:<br>####-####-####-####<br>or ################</label><br/>
+			<input type="text" id="cnum" name="cnum" onchange="checkCardNum();"/><br/>
+			<label for="phonenum">Phone Number:<br/>##########<br/>###.###.####</br>###-###-####</label><br/>
+			<input type="text" id="phonenum" name="phonenum" onchange="checkPhoneNum();"/><br/>
+			<label for="email">Email:<br>myemail@example.com</label><br/>
+			<input type="text" id="email" name="email" onchange="checkEmail();"/><br/>
+			
+			<!-- Order Details -->	
+			<table id="ordertable">
+				<tr>
+					<td>Item:</td>
+					<td>Keychain</td>
+					<td>Proud Knight Sticker</td>
+					<td>Sir Victor Sticker</td>
+					<td>Wartburg Flag</td>
+				</tr>
+				<tr>	
+					<td>Item Desc</td>
+					<td>Small orange &#38; brown wartburg keychain</td>
+					<td>Small sticker with the words: proud knight</td>
+					<td>Sticker with Sir Victor and Wartburg College</td>
+					<td>Orange Wartburg display flag</td>
+				</tr>
+				<tr>
+					<td>Unit Price</td>
+					<td>$1.50</td>
+					<td>$0.75</td>
+					<td>$0.60</td>
+					<td>$2.00</td>
+				</tr>
+				<tr>
+					<td>Shipping Price</td>
+					<td>$1.50 + $0.10/unit</td>
+					<td>$1 + $0.04/unit</td>
+					<td>$1.20 + $0.05/unit</td>
+					<td>$1.50 + $0.15/unit</td>
+				</tr>
+				<tr>
+					<td>Quantity to order: Enter amount 0-110 and order at least 1 item.</td>
+					<td>
+					<input type="text" id="kcQuantity" min="0" max="110" name="kcQuantity" onclick="checkQuantity(getElementById('kcQuantity').value);"/>
+					</td>
+					<td>
+					<input type="text" id="pkQuantity" min="0" max= "110" name="pkQuantity" onclick="checkQuantity(getElementById('pkQuantity').value);"/>
+					</td>
+					<td>
+					<input type="text" id="svQuantity" min="0" max= "110" name="svQuantity" onclick="checkQuantity(getElementById('svQuantity').value);"/>
+					</td>
+					<td>
+					<input type="text" id="flagQuantity" min="0" max= "110" name="flagQuantity" onclick="checkQuantity(getElementById('flagQuantity').value);"/>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit Order"/>
+			<input type="reset" value="Reset"/>
+			
+		</form>
+	</body>
+	<div>
+		<a href = "TheOrangeStoreHome.html">Back To Main Page</a>
+	</div>
+</html>

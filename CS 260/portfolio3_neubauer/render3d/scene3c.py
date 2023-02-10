@@ -1,0 +1,19 @@
+# scene3c.py
+#   * materials
+#   * moveable light
+#   * multiple lights
+
+from ren3d.scenedef import *
+from ren3d.materials import *
+
+camera.set_perspective(30, 1.3333, 5)
+scene.background = (.5, .5, 1)
+scene.ambient = (.2, .2, .2)
+scene.set_light(pos=(-150, 200, 50), color=(.8, .8, .8))
+scene.add_light(pos=(150, 50, 50), color=(.8, .8, .8))
+
+scene.add(Box(pos=(-3, -2, -20), size=(2, 2, 2), color=RED_PLASTIC))
+scene.add(Sphere(pos=(2.5, -2, -20), radius=1, color=SILVER))
+scene.add(Sphere(pos=(0, 0, -25), radius=3, color=BRASS))
+
+scene.add(Box(pos=(0, -3.5, -20), size=(18, 1, 30), color=(.45, .4, .15)))

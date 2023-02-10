@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module ray3d</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ray3d</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/ray3d.py">/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/ray3d.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;ray3d.py<br>
+#&nbsp;&nbsp;&nbsp;3D&nbsp;Rays&nbsp;and&nbsp;intervals</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="ray3d.html#Interval">Interval</a>
+</font></dt><dt><font face="helvetica, arial"><a href="ray3d.html#Ray">Ray</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Interval">class <strong>Interval</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Interval">Interval</a>(low=0.0,&nbsp;high=inf)<br>
+&nbsp;<br>
+Simple&nbsp;representation&nbsp;of&nbsp;an&nbsp;open&nbsp;interval<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Interval-__contains__"><strong>__contains__</strong></a>(self, t)</dt><dd><tt>returns&nbsp;True&nbsp;iff&nbsp;t&nbsp;is&nbsp;inside&nbsp;this&nbsp;interval&nbsp;(excluding&nbsp;endpoints)<br>
+&gt;&gt;&gt;&nbsp;inter&nbsp;=&nbsp;<a href="#Interval">Interval</a>(2,100)<br>
+&gt;&gt;&gt;&nbsp;0&nbsp;in&nbsp;inter<br>
+False<br>
+&gt;&gt;&gt;&nbsp;5&nbsp;in&nbsp;inter<br>
+True<br>
+&gt;&gt;&gt;&nbsp;100&nbsp;in&nbsp;inter<br>
+False</tt></dd></dl>
+
+<dl><dt><a name="Interval-__init__"><strong>__init__</strong></a>(self, low=0.0, high=inf)</dt><dd><tt>&gt;&gt;&gt;&nbsp;myInterval&nbsp;=&nbsp;<a href="#Interval">Interval</a>()<br>
+&gt;&gt;&gt;&nbsp;myInterval.low<br>
+0.0<br>
+&gt;&gt;&gt;&nbsp;myInterval.high<br>
+inf<br>
+&gt;&gt;&gt;&nbsp;myInterval&nbsp;=&nbsp;<a href="#Interval">Interval</a>(.001,200)<br>
+&gt;&gt;&gt;&nbsp;myInterval.low<br>
+0.001<br>
+&gt;&gt;&gt;&nbsp;myInterval.high<br>
+200.0</tt></dd></dl>
+
+<dl><dt><a name="Interval-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>&gt;&gt;&gt;&nbsp;<a href="#Interval">Interval</a>()<br>
+<a href="#Interval">Interval</a>(0.0,&nbsp;inf)<br>
+&gt;&gt;&gt;&nbsp;<a href="#Interval">Interval</a>(0.5,&nbsp;200)<br>
+<a href="#Interval">Interval</a>(0.5,&nbsp;200.0)</tt></dd></dl>
+
+<dl><dt><a name="Interval-set"><strong>set</strong></a>(self, low, high)</dt><dd><tt>set&nbsp;endpoints&nbsp;of&nbsp;interval&nbsp;to&nbsp;low&nbsp;and&nbsp;high<br>
+&gt;&gt;&gt;&nbsp;inter&nbsp;=&nbsp;<a href="#Interval">Interval</a>()<br>
+&gt;&gt;&gt;&nbsp;inter.<a href="#Interval-set">set</a>(3.1,&nbsp;4.5)<br>
+&gt;&gt;&gt;&nbsp;inter.low<br>
+3.1<br>
+&gt;&gt;&gt;&nbsp;inter.high<br>
+4.5</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Ray">class <strong>Ray</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Ray">Ray</a>(start,&nbsp;dir)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Ray-__init__"><strong>__init__</strong></a>(self, start, dir)</dt><dd><tt>A&nbsp;ray&nbsp;beginning&nbsp;at&nbsp;start&nbsp;going&nbsp;in&nbsp;direction&nbsp;dir.<br>
+start&nbsp;is&nbsp;a&nbsp;point,&nbsp;and&nbsp;dir&nbsp;is&nbsp;a&nbsp;vector,&nbsp;both&nbsp;are&nbsp;represented<br>
+using&nbsp;a&nbsp;Vector3&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;r&nbsp;=&nbsp;<a href="#Ray">Ray</a>(Point([0,1,2]),&nbsp;Vector([1,2,1]))<br>
+&gt;&gt;&gt;&nbsp;r.start<br>
+Point([0.0,&nbsp;1.0,&nbsp;2.0])<br>
+&gt;&gt;&gt;&nbsp;r.dir<br>
+Vector([1.0,&nbsp;2.0,&nbsp;1.0])<br>
+&gt;&gt;&gt;&nbsp;r&nbsp;=&nbsp;<a href="#Ray">Ray</a>((1,2,3),&nbsp;(4,5,6))<br>
+&gt;&gt;&gt;&nbsp;r.start<br>
+Point([1.0,&nbsp;2.0,&nbsp;3.0])<br>
+&gt;&gt;&gt;&nbsp;r.dir<br>
+Vector([4.0,&nbsp;5.0,&nbsp;6.0])</tt></dd></dl>
+
+<dl><dt><a name="Ray-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Returns&nbsp;printable&nbsp;and&nbsp;evalable&nbsp;representation&nbsp;of&nbsp;<a href="#Ray">Ray</a><br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;<a href="#Ray">Ray</a>(Point([0,1,2]),&nbsp;Vector([1,2,3]))<br>
+<a href="#Ray">Ray</a>(Point([0.0,&nbsp;1.0,&nbsp;2.0]),&nbsp;Vector([1.0,&nbsp;2.0,&nbsp;3.0]))</tt></dd></dl>
+
+<dl><dt><a name="Ray-point_at"><strong>point_at</strong></a>(self, t)</dt><dd><tt>returns&nbsp;point&nbsp;on&nbsp;ray&nbsp;at&nbsp;time&nbsp;t<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;r&nbsp;=&nbsp;<a href="#Ray">Ray</a>(Point([0,1,2]),&nbsp;Vector([1,2,3]))<br>
+&gt;&gt;&gt;&nbsp;r.<a href="#Ray-point_at">point_at</a>(0)<br>
+Point([0.0,&nbsp;1.0,&nbsp;2.0])<br>
+&gt;&gt;&gt;&nbsp;r.<a href="#Ray-point_at">point_at</a>(1)<br>
+Point([1.0,&nbsp;3.0,&nbsp;5.0])<br>
+&gt;&gt;&gt;&nbsp;r.<a href="#Ray-point_at">point_at</a>(3.75)<br>
+Point([3.75,&nbsp;8.5,&nbsp;13.25])</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

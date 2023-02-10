@@ -1,0 +1,94 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- orderform.html
+	 By: Ryan Neubauer
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>The Orange Store</title>
+		<link rel='shortcut icon' type='image/vnd.microsoft.icon' href='C:\Users\kmneu\OneDrive\Desktop\CS 280\A2\favicon.ico' />
+		<link rel='stylesheet' type='text/css' href="styles\home.css"/>
+	</head>
+	<body>
+		<h1 style="text-decoration: underline;">Please enter your details for payment below:</h1>
+		<form>
+			<!-- Name and Address -->
+			<label for="fname">First name:</label><br/>
+			<input type="text" id="fname" name="fname"/><br/>
+			<label for="lname">Last name:</label><br/>
+			<input type="text" id="lname" name="lname"/><br/>
+			<label for="caddress">Address:</label><br/>
+			<input type="text" id="caddress" name="caddress"/><br/>
+			<!-- Payment Info -->
+			<label for="paymenttype">Payment Type:</label><br/>
+			<input type="radio" id="visa" name="visa" value="visa"/>
+			<label for="visa">Visa</label><br/>
+			<input type="radio" id="master" name="master" value="master"/>
+			<label for="master">Master</label><br/>
+			<input type="radio" id="discover" name="discover" value="discover"/>
+			<label for="discover">Discover</label><br/>
+			<br/>
+			<!-- Card Details -->
+			<label for="cnum">Card Number:</label><br/>
+			<input type="text" id="cnum" name="cnum"/><br/>
+			<label for="phonenum">Phone Number:</label><br/>
+			<input type="text" id="phonenum" name="phonenum"/><br/>
+			<label for="email">Email:</label><br/>
+			<input type="text" id="email" name="email"/><br/>
+			<!-- Order Details -->
+			<table id="ordertable">
+				<tr>
+					<td>Item:</td>
+					<td>Keychain</td>
+					<td>Proud Knight Sticker</td>
+					<td>Sir Victor Sticker</td>
+					<td>Wartburg Flag</td>
+				</tr>
+				<tr>	
+					<td>Item Desc</td>
+					<td>Small orange &#38; brown wartburg keychain</td>
+					<td>Small sticker with the words: proud knight</td>
+					<td>Sticker with Sir Victor and Wartburg College</td>
+					<td>Orange Wartburg display flag</td>
+				</tr>
+				<tr>
+					<td>Unit Price</td>
+					<td>$1.50</td>
+					<td>$0.75</td>
+					<td>$0.60</td>
+					<td>$2.00</td>
+				</tr>
+				<tr>
+					<td>Shipping Price</td>
+					<td>$1.50 + $0.10/unit</td>
+					<td>$1 + $0.04/unit</td>
+					<td>$1.20 + $0.05/unit</td>
+					<td>$1.50 + $0.15/unit</td>
+				</tr>
+				<tr>
+					<td>Quantity to order:</td>
+					<td>
+					<input type="text" id="kcQuantity" name="kcQuantity"/>
+					</td>
+					<td>
+					<input type="text" id="pkQuantity" name="pkQuantity"/>
+					</td>
+					<td>
+					<input type="text" id="svQuantity" name="svQuantity"/>
+					</td>
+					<td>
+					<input type="text" id="flagQuantity" name="flagQuantity"/>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit">
+			<input type="reset">
+		</form>
+	</body>
+	<div>
+		<a href = "TheOrangeStoreHome.html">Back To Main Page</a>
+	</div>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module rgb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>rgb</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/rgb.py">/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/rgb.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;rgb.py<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;Calculations&nbsp;on&nbsp;color&nbsp;values</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="rgb.html#RGB">RGB</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RGB">class <strong>RGB</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#RGB">RGB</a>(rgb)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="RGB-__init__"><strong>__init__</strong></a>(self, rgb)</dt><dd><tt>representaiton&nbsp;of&nbsp;color&nbsp;using&nbsp;3&nbsp;floating&nbsp;point&nbsp;values<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;c&nbsp;=&nbsp;<a href="#RGB">RGB</a>((.3,&nbsp;.3,&nbsp;.75))<br>
+&gt;&gt;&gt;&nbsp;c.values<br>
+(0.3,&nbsp;0.3,&nbsp;0.75)<br>
+&gt;&gt;&gt;&nbsp;c&nbsp;=&nbsp;<a href="#RGB">RGB</a>((1,&nbsp;0,&nbsp;1))<br>
+&gt;&gt;&gt;&nbsp;c.values<br>
+(1.0,&nbsp;0.0,&nbsp;1.0)<br>
+&gt;&gt;&gt;</tt></dd></dl>
+
+<dl><dt><a name="RGB-__iter__"><strong>__iter__</strong></a>(self)</dt><dd><tt>iterate&nbsp;through&nbsp;components&nbsp;in&nbsp;r,g,b&nbsp;order<br>
+&gt;&gt;&gt;&nbsp;c&nbsp;=&nbsp;<a href="#RGB">RGB</a>((1,&nbsp;2,&nbsp;3))<br>
+&gt;&gt;&gt;&nbsp;list(c)<br>
+[1.0,&nbsp;2.0,&nbsp;3.0]</tt></dd></dl>
+
+<dl><dt><a name="RGB-__mul__"><strong>__mul__</strong></a>(self, i)</dt><dd><tt>return&nbsp;a&nbsp;new&nbsp;<a href="#RGB">RGB</a>&nbsp;that&nbsp;is&nbsp;scaled&nbsp;by&nbsp;i<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;.25*<a href="#RGB">RGB</a>((.8,&nbsp;.5,&nbsp;.4))<br>
+<a href="#RGB">RGB</a>((0.2,&nbsp;0.125,&nbsp;0.1))</tt></dd></dl>
+
+<dl><dt><a name="RGB-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>&gt;&gt;&gt;&nbsp;<a href="#RGB">RGB</a>((.5,&nbsp;.5,&nbsp;1))<br>
+<a href="#RGB">RGB</a>((0.5,&nbsp;0.5,&nbsp;1.0))</tt></dd></dl>
+
+<dl><dt><a name="RGB-__rmul__"><strong>__rmul__</strong></a>(self, i)</dt><dd><tt>return&nbsp;a&nbsp;new&nbsp;<a href="#RGB">RGB</a>&nbsp;that&nbsp;is&nbsp;scaled&nbsp;by&nbsp;i<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;<a href="#RGB">RGB</a>((.8,&nbsp;.5,&nbsp;.4))*(.25)<br>
+<a href="#RGB">RGB</a>((0.2,&nbsp;0.125,&nbsp;0.1))</tt></dd></dl>
+
+<dl><dt><a name="RGB-quantize"><strong>quantize</strong></a>(self, top)</dt><dd><tt>return&nbsp;a&nbsp;tuple&nbsp;of&nbsp;ints&nbsp;all&nbsp;in&nbsp;range(top+1)<br>
+&gt;&gt;&gt;&nbsp;<a href="#RGB">RGB</a>((.3,&nbsp;.3,&nbsp;.75)).<a href="#RGB-quantize">quantize</a>(255)<br>
+(76,&nbsp;76,&nbsp;191)<br>
+&gt;&gt;&gt;&nbsp;<a href="#RGB">RGB</a>((.5,&nbsp;.8,&nbsp;1.1)).<a href="#RGB-quantize">quantize</a>(255)<br>
+(128,&nbsp;204,&nbsp;255)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

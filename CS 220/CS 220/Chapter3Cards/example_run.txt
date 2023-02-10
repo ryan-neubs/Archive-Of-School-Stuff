@@ -1,0 +1,194 @@
+This program simulates dealing bridge hands.
+
+Please choose an option
+
+	'r' for random deal
+	'f' to deal from a file
+	'q' to quit the program
+
+Your choice? f
+
+Enter file name for the deck: deck1.txt
+--------------------------------------------------
+North's Cards:
+    Ace of Spades
+    King of Spades
+    Eight of Spades
+    Three of Spades
+    Ten of Hearts
+    Nine of Hearts
+    Seven of Hearts
+    Five of Hearts
+    Four of Hearts
+    Three of Hearts
+    Ace of Diamonds
+    Queen of Diamonds
+    Six of Diamonds
+
+Points: 16
+Can Open: True
+
+Press <Enter> to continue
+--------------------------------------------------
+East's Cards:
+    Jack of Spades
+    Nine of Spades
+    Seven of Spades
+    Four of Spades
+    Queen of Hearts
+    Two of Hearts
+    Four of Diamonds
+    Two of Diamonds
+    Ace of Clubs
+    Eight of Clubs
+    Seven of Clubs
+    Five of Clubs
+    Three of Clubs
+
+Points: 9
+Can Open: False
+
+Press <Enter> to continue
+--------------------------------------------------
+South's Cards:
+    Five of Spades
+    Two of Spades
+    Ace of Hearts
+    King of Hearts
+    Jack of Diamonds
+    Ten of Diamonds
+    Nine of Diamonds
+    Seven of Diamonds
+    Three of Diamonds
+    Ten of Clubs
+    Nine of Clubs
+    Six of Clubs
+    Four of Clubs
+
+Points: 10
+Can Open: False
+
+Press <Enter> to continue
+--------------------------------------------------
+West's Cards:
+    Queen of Spades
+    Ten of Spades
+    Six of Spades
+    Jack of Hearts
+    Eight of Hearts
+    Six of Hearts
+    King of Diamonds
+    Eight of Diamonds
+    Five of Diamonds
+    King of Clubs
+    Queen of Clubs
+    Jack of Clubs
+    Two of Clubs
+
+Points: 12
+Can Open: False
+
+Press <Enter> to continue
+
+Would you like to deal again?
+
+Please choose an option
+
+	'r' for random deal
+	'f' to deal from a file
+	'q' to quit the program
+
+Your choice? r
+
+--------------------------------------------------
+North's Cards:
+    King of Spades
+    Seven of Spades
+    Three of Spades
+    Ace of Hearts
+    Nine of Hearts
+    Five of Hearts
+    Ten of Diamonds
+    Two of Diamonds
+    Queen of Clubs
+    Ten of Clubs
+    Nine of Clubs
+    Four of Clubs
+    Three of Clubs
+
+Points: 10
+Can Open: False
+
+Press <Enter> to continue
+--------------------------------------------------
+East's Cards:
+    Ten of Spades
+    Nine of Spades
+    Eight of Spades
+    Five of Spades
+    King of Hearts
+    Eight of Hearts
+    Four of Hearts
+    Two of Hearts
+    Ace of Diamonds
+    Eight of Diamonds
+    Seven of Diamonds
+    Four of Diamonds
+    Three of Diamonds
+
+Points: 10
+Can Open: False
+
+Press <Enter> to continue
+--------------------------------------------------
+South's Cards:
+    Six of Spades
+    Two of Spades
+    Queen of Hearts
+    Jack of Hearts
+    Ten of Hearts
+    Seven of Hearts
+    Six of Hearts
+    Ace of Clubs
+    King of Clubs
+    Seven of Clubs
+    Six of Clubs
+    Five of Clubs
+    Two of Clubs
+
+Points: 14
+Can Open: True
+
+Press <Enter> to continue
+--------------------------------------------------
+West's Cards:
+    Ace of Spades
+    Queen of Spades
+    Jack of Spades
+    Four of Spades
+    Three of Hearts
+    King of Diamonds
+    Queen of Diamonds
+    Jack of Diamonds
+    Nine of Diamonds
+    Six of Diamonds
+    Five of Diamonds
+    Jack of Clubs
+    Eight of Clubs
+
+Points: 17
+Can Open: True
+
+Press <Enter> to continue
+
+Would you like to deal again?
+
+Please choose an option
+
+	'r' for random deal
+	'f' to deal from a file
+	'q' to quit the program
+
+Your choice? q
+Thanks for using this program.
+zelle:bridge$ 

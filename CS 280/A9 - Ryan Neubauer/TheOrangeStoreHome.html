@@ -1,0 +1,115 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- TheOrangeStore.html
+	 By: Ryan Neubauer
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>The Orange Store</title>
+		<link rel='shortcut icon' type='image/vnd.microsoft.icon' href='C:\Users\kmneu\OneDrive\Desktop\CS 280\A2\images\favicon.ico' />
+		<link rel='stylesheet' type='text/css' href="styles\home.css"/>
+		<script type="text/javascript" src="imgstack.js" >
+		</script>
+		<script type="text/javascript" src="bkgChange.js"></script>
+		<script type="text/javascript">
+		function moveImg(move, newTop, newLeft) {
+			dom = document.getElementById(move).style;
+			dom.top = newTop + "px";
+			dom.left = newLeft + "px";
+			}
+		</script>
+		<style type="text/css">
+			.student {position: absolute;
+					top: 525px; left: 15px; border: 2px solid white;}
+			.thew {position: absolute; 
+					top: 550px; left: 40px; border: 2px solid white;}
+			.choir {position: absolute;
+					top: 575px; left: 65px; border: 2px solid white;}
+			.stadium {position: absolute;
+					top: 600px; left: 90px; border: 2px solid white;}
+			.victor {position: absolute; top: 12px; left: 330px; z-index: 0;}
+		</style>
+	</head>
+	<body id="homebody">
+		<div id='top'>
+		<h1>Welcome to The Orange Store!</h1>
+		<p><strong>We have several items for those who love <span style="color:orange;">Wartburg</span>!</strong></p>
+		<p>We love <u>all</u> customers:</p>
+		<ul id='customerTypeList'>
+			<div class='customerTypes'>
+			<li>Alumni!</li>
+			<li>Current Students!</li>
+			<li>Wartburg Staff!</li>
+			<li>Parents!</li>
+		</ul>
+		<input type="radio" name="orange" id="orange" value="orange" onclick="bkgChange('top','#CC5500')"/>
+		<label for="orange">Orange</label>
+		<input type="radio" name="grey" id="grey" value="grey" onclick="bkgChange('top','#808080')"/>
+		<label for="grey">Grey</label>
+		<input type="radio" name="black" id="black" value="black" onclick="bkgChange('top','black')"/>
+		<label for="black">Black</label>
+		<input type="radio" name="white" id="white" value="white" onclick="bkgChange('top','white')"/>
+		<label for="white">White</label>
+		</div>
+		<br/>
+		<div>
+			<img class="student" id="student" height="150"
+				width="300" src="images/students.jpg" 
+				alt="(Picture of students)" 
+				onclick="toTop('student')" />
+			<img class="thew" id="thew" height="150"
+				width="300" src="images/thew.jpg"
+				alt="(Picture of The W)"
+				onclick="toTop('thew')" />
+			<img class="choir" id="choir" height="150"
+				width="300" src="images/choir.jpg"
+				alt="(Picture of Wartburg Choir)"
+				onclick="toTop('choir')" />
+			<img class="stadium" id="stadium" height="150"
+				width="300" src="images/stadium.jpg"
+				onclick="toTop('stadium')" />
+		</div>
+		<table id='productsTable'>
+		<table-caption>Merchandise and Prices</table-caption>
+		<tr>
+			<td><img src="images\keychain.jpg" alt="Wartburg Keychain" width="108px" height="116px"/></td>
+			<td><img src="images\KnightSticker.jpg" alt="Sir Victor Sticker" width="112px" height="112px"/></td>
+			<td><img src="images\ProudKnightSticker.png" alt="Proud Knight Sticker" width="112px" height="112px"/></td>
+			<td><img src="images\Wartburg_Flag.png" alt="Wartburg Flag" width="105px" height="105px"/></td>
+		</tr>
+		<tr style = text-align:center;>
+			<td>Wartburg Keychain</td>
+			<td>Sir Victor Sticker</td>
+			<td>Proud Knight Sticker</td>
+			<td>Wartburg Flag</td>
+		</tr>
+		<tr style = text-align:center;>
+			<td>$1.50</td>
+			<td>$0.75</td>
+			<td>$0.60</td>
+			<td>$2.00</td>
+		</tr>
+		</table>
+		<div id='links'>
+			<a href='StickerProduct.html'>Sticker Products</a>
+			<a href='FlagProduct.html'>How To Use The Flag</a>
+			<a href='orderform.html'>Submit an order</a>
+		</div>
+		<form action = "">
+		<img src="images/sirVictor.jpg" width="75" height="125" class="victor" id="victor" alt="sirVictor"/>
+		<p>
+			<label for="leftCoord"> x-coordinate:</label> 
+			<input type = "text" id = "leftCoord" size = "3" />
+			<br />
+			<label for="topCoord"> y-coordinate: </label>
+			<input type = "text" id = "topCoord" size = "3" />
+			<input type = "button" value = "Move Sir Victor!" onclick = "moveImg('victor', document.getElementById('topCoord').value, document.getElementById('leftCoord').value);" />
+		</p>
+		</form>
+	</body>
+	<div id='bottomBox'>
+	</div>
+</html>

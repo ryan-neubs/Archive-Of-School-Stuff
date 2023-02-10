@@ -1,0 +1,16 @@
+html {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic";
+	text-align:center;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwizMuRuaSK6KSY7DhoR9IXyvVkrrWJpVmfg&usqp=CAU');
+
+}
+h1 {
+	color:white;
+}
+#Roster {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border:3px solid black;
+}
+	

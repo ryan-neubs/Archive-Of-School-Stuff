@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module camera</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>camera</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/camera.py">/home/zelle/Dropbox/classes/cs260/projects/render3d/handout/version1/ren3d/camera.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;camera.py<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;Implementation&nbsp;of&nbsp;simple&nbsp;camera&nbsp;for&nbsp;describing&nbsp;views</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="camera.html#Camera">Camera</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Camera">class <strong>Camera</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Camera">Camera</a>&nbsp;is&nbsp;used&nbsp;to&nbsp;specify&nbsp;the&nbsp;view&nbsp;of&nbsp;the&nbsp;scene.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Camera-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Camera-ij_ray"><strong>ij_ray</strong></a>(self, i, j)</dt><dd><tt>return&nbsp;the&nbsp;ray&nbsp;from&nbsp;the&nbsp;eye&nbsp;through&nbsp;the&nbsp;ijth&nbsp;pixel.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;c&nbsp;=&nbsp;<a href="#Camera">Camera</a>()<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-set_resolution">set_resolution</a>(400,&nbsp;300)<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-ij_ray">ij_ray</a>(-0.5,&nbsp;-0.5)<br>
+Ray(Point([0.0,&nbsp;0.0,&nbsp;0.0]),&nbsp;Vector([-10.0,&nbsp;-10.0,&nbsp;-10.0]))<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-ij_ray">ij_ray</a>(399.5,&nbsp;299.5)<br>
+Ray(Point([0.0,&nbsp;0.0,&nbsp;0.0]),&nbsp;Vector([10.0,&nbsp;10.0,&nbsp;-10.0]))<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-ij_ray">ij_ray</a>(0,&nbsp;0)<br>
+Ray(Point([0.0,&nbsp;0.0,&nbsp;0.0]),&nbsp;Vector([-9.975,&nbsp;-9.966666666666667,&nbsp;-10.0]))<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-ij_ray">ij_ray</a>(399/2,&nbsp;299/2)<br>
+Ray(Point([0.0,&nbsp;0.0,&nbsp;0.0]),&nbsp;Vector([0.0,&nbsp;0.0,&nbsp;-10.0]))<br>
+&gt;&gt;&gt;</tt></dd></dl>
+
+<dl><dt><a name="Camera-set_perspective"><strong>set_perspective</strong></a>(self, hfov, aspect, distance)</dt><dd><tt>Set&nbsp;up&nbsp;perspective&nbsp;view<br>
+hfov&nbsp;is&nbsp;horizontal&nbsp;field&nbsp;of&nbsp;view&nbsp;(in&nbsp;degrees)<br>
+aspect&nbsp;is&nbsp;the&nbsp;aspect&nbsp;ratio&nbsp;horizontal/vertical<br>
+distance&nbsp;is&nbsp;distance&nbsp;from&nbsp;eye&nbsp;to&nbsp;focal&nbsp;plane.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;c&nbsp;=&nbsp;<a href="#Camera">Camera</a>()<br>
+&gt;&gt;&gt;&nbsp;c.<a href="#Camera-set_perspective">set_perspective</a>(60,&nbsp;1.333,&nbsp;20)<br>
+&gt;&gt;&gt;&nbsp;c.eye<br>
+Point([0.0,&nbsp;0.0,&nbsp;0.0])<br>
+&gt;&gt;&gt;&nbsp;c.distance<br>
+20<br>
+&gt;&gt;&gt;&nbsp;c.window<br>
+(-11.547005383792515,&nbsp;-8.662419642755076,&nbsp;11.547005383792515,&nbsp;8.662419642755076)</tt></dd></dl>
+
+<dl><dt><a name="Camera-set_resolution"><strong>set_resolution</strong></a>(self, width, height)</dt><dd><tt>Set&nbsp;resolution&nbsp;of&nbsp;pixel&nbsp;sampling&nbsp;across&nbsp;the&nbsp;window.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-radians"><strong>radians</strong></a>(x, /)</dt><dd><tt>Convert&nbsp;angle&nbsp;x&nbsp;from&nbsp;degrees&nbsp;to&nbsp;radians.</tt></dd></dl>
+ <dl><dt><a name="-tan"><strong>tan</strong></a>(x, /)</dt><dd><tt>Return&nbsp;the&nbsp;tangent&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</tt></dd></dl>
+</td></tr></table>
+</body></html>
